@@ -1,43 +1,17 @@
 import "./App.css";
-import {
-  NavigationMenu,
-  NavigationMenuContent,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-  NavigationMenuTrigger,
-} from "@/components/ui/navigation-menu";
+import EngHistory from "./components/EngHistory";
+import NavBar from "./components/NavBar";
+import { Routes, Route } from 'react-router-dom';
+import LandingPage from "./components/LandingPage";
 
 function App() {
   return (
     <>
-      <NavigationMenu>
-        <NavigationMenuList>
-          <NavigationMenuItem>
-            <NavigationMenuTrigger>About</NavigationMenuTrigger>
-            <NavigationMenuContent>
-              <NavigationMenuLink>Link</NavigationMenuLink>
-            </NavigationMenuContent>
-            <NavigationMenuTrigger>Work Experience</NavigationMenuTrigger>
-            <NavigationMenuContent>
-              <NavigationMenuLink>Link</NavigationMenuLink>
-            </NavigationMenuContent>
-            <NavigationMenuTrigger>Projects</NavigationMenuTrigger>
-            <NavigationMenuContent>
-              <NavigationMenuLink>Link</NavigationMenuLink>
-            </NavigationMenuContent>
-            <NavigationMenuTrigger>Volunteer</NavigationMenuTrigger>
-            <NavigationMenuContent>
-              <NavigationMenuLink>Link</NavigationMenuLink>
-            </NavigationMenuContent>
-            <NavigationMenuTrigger>Hobbies</NavigationMenuTrigger>
-            <NavigationMenuContent>
-              <NavigationMenuLink>Link</NavigationMenuLink>
-            </NavigationMenuContent>
-          </NavigationMenuItem>
-        </NavigationMenuList>
-      </NavigationMenu>
-      <p>Hello World</p>
+     <NavBar />
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/eng_history" element={<EngHistory/>} />
+      </Routes>
     </>
   );
 }
