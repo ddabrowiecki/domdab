@@ -16,12 +16,11 @@ const ContentCard = ({ text }: ContentCardProps) => {
     <>
       <Card className="content-card">
         <CardHeader>
-          <CardTitle>Card Title</CardTitle>
+          <CardTitle>Reddit</CardTitle>
           <CardDescription>{text}</CardDescription>
-          <CardAction>Card Action</CardAction>
         </CardHeader>
         <CardContent>
-          <p>Card Content</p>
+          {/* <p>Card Content</p> */}
         </CardContent>
       </Card>
     </>
