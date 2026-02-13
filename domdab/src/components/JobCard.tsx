@@ -13,7 +13,6 @@ interface JobCardProps {
 }
 
 const JobCard = ({ job }: JobCardProps) => {
-  console.log(job)
   return (
     <Card className="content-card">
       <CardHeader>

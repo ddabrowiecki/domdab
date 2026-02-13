@@ -15,23 +15,17 @@ const SideAnimation = ({ children, logoSource }: SideAnimationProps) => {
       setIsOpen(true);
     }, 1000);
   };
-  return (
-    <>
-      {
-      // isOpen ? (
-      //   <div className="work-card">{children} </div>
-      // ) : (
-        <div className="box">
-          <div
-            className={`side-animation ${fireAnimation ? "animate-job" : ""}`}
-            onClick={handleOpen}
-          >
-            <img className="work-logo" src={logoSource} />
-          </div>
-        </div>
-      // )
-      }
-    </>
+  return isOpen ? (
+    <div className="work-card">{children} </div>
+  ) : (
+    <div className="box">
+      <div
+        className={`side-animation ${fireAnimation ? "animate-job" : ""}`}
+        onClick={handleOpen}
+      >
+        <img className="work-logo" src={logoSource} />
+      </div>
+    </div>
   );
 };
 
