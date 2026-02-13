@@ -1,30 +1,28 @@
 import {
   Card,
-  CardAction,
   CardContent,
   CardDescription,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
 
-interface ContentCardProps {
-  text: string;
+import { type Job } from "@/assets/JobData";
+
+interface JobCardProps {
+  job: Job;
 }
 
-const ContentCard = ({ text }: ContentCardProps) => {
+const JobCard = ({ job }: JobCardProps) => {
+  console.log(job)
   return (
-    <>
-      <Card className="content-card">
-        <CardHeader>
-          <CardTitle>Reddit</CardTitle>
-          <CardDescription>{text}</CardDescription>
-        </CardHeader>
-        <CardContent>
-          {/* <p>Card Content</p> */}
-        </CardContent>
-      </Card>
-    </>
+    <Card className="content-card">
+      <CardHeader>
+        <CardTitle>{job.company}</CardTitle>
+        <CardDescription>{job.description}</CardDescription>
+      </CardHeader>
+      <CardContent>{/* <p>Card Content</p> */}</CardContent>
+    </Card>
   );
 };
 
-export default ContentCard;
+export default JobCard;

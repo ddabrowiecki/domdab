@@ -17,9 +17,10 @@ const SideAnimation = ({ children, logoSource }: SideAnimationProps) => {
   };
   return (
     <>
-      {isOpen ? (
-        <div className="work-card">{children} </div>
-      ) : (
+      {
+      // isOpen ? (
+      //   <div className="work-card">{children} </div>
+      // ) : (
         <div className="box">
           <div
             className={`side-animation ${fireAnimation ? "animate-job" : ""}`}
@@ -28,7 +29,8 @@ const SideAnimation = ({ children, logoSource }: SideAnimationProps) => {
             <img className="work-logo" src={logoSource} />
           </div>
         </div>
-      )}
+      // )
+      }
     </>
   );
 };
