@@ -7,6 +7,7 @@ import {
 } from "@/components/ui/card";
 
 import { type Job } from "@/assets/JobData";
+import ProjectDropdown from "./ProjectDropdown";
 
 interface JobCardProps {
   job: Job;
@@ -19,7 +20,9 @@ const JobCard = ({ job }: JobCardProps) => {
         <CardTitle>{job.company}</CardTitle>
         <CardDescription>{job.description}</CardDescription>
       </CardHeader>
-      <CardContent>{/* <p>Card Content</p> */}</CardContent>
+      <CardContent>
+        <ProjectDropdown projects={job.projects} />
+      </CardContent>
     </Card>
   );
 };
