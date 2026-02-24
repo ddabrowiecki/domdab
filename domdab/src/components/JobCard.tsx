@@ -6,6 +6,8 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 
+import { Badge } from "@/components/ui/badge";
+
 import { type Job } from "@/assets/JobData";
 import ProjectDropdown from "./ProjectDropdown";
 
@@ -18,6 +20,7 @@ const JobCard = ({ job }: JobCardProps) => {
     <Card className="content-card">
       <CardHeader>
         <CardTitle>{job.company}</CardTitle>
+        <Badge variant="outline">{job.datesWorked}</Badge>
         <CardDescription>{job.description}</CardDescription>
       </CardHeader>
       <CardContent>

@@ -8,6 +8,7 @@ export interface Project {
 export interface Job {
   company: string;
   description: string;
+  datesWorked: string;
   projects: Project[] | null;
 }
 
@@ -15,6 +16,7 @@ export const jobHistory: Job[] = [
   {
     company: "Quintara Biosciences",
     description: "I work here now",
+    datesWorked: "April 2023 - present",
     projects: [
       {
         value: "plasmid-order",
@@ -31,6 +33,7 @@ export const jobHistory: Job[] = [
   {
     company: "Reddit",
     description: "I used to work here",
+    datesWorked: "May 2016 - Feb 2023",
     projects: null,
   },
 ];
