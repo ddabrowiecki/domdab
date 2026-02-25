@@ -19,11 +19,14 @@ const JobCard = ({ job }: JobCardProps) => {
   return (
     <Card className="content-card">
       <CardHeader>
+        <div className="flex justify-between">
         <CardTitle>{job.company}</CardTitle>
         <Badge variant="outline">{job.datesWorked}</Badge>
+        </div>
         <CardDescription>{job.description}</CardDescription>
       </CardHeader>
-      <CardContent>
+      <CardContent className="flex justify-around">
+        <div>Hello</div>
         <ProjectDropdown projects={job.projects} />
       </CardContent>
     </Card>

@@ -33,8 +33,19 @@
   margin-top: 20px;
 }
 
-.work-logo {
+.logo-box {
+    display: flex;
+    align-items: center;
+    height: 200px;
+}
+
+.reddit-logo {
   height: 100%;
+  padding-left: 2%;
+}
+
+.quintara-logo {
+  height: 18%;
   padding-left: 2%;
 }
 

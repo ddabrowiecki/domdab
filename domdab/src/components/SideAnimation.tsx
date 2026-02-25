@@ -1,8 +1,9 @@
 import React, { useState } from "react";
+import redditLogo from "../assets/RedditLogo.png";
 
 interface SideAnimationProps {
   children: React.ReactNode;
-  logoSource: string;
+  logoSource: string | undefined;
 }
 
 const SideAnimation = ({ children, logoSource }: SideAnimationProps) => {
@@ -23,7 +24,14 @@ const SideAnimation = ({ children, logoSource }: SideAnimationProps) => {
         className={`side-animation ${fireAnimation ? "animate-job" : ""}`}
         onClick={handleOpen}
       >
-        <img className="work-logo" src={logoSource} />
+        <div className="logo-box">
+          <img
+            className={
+              logoSource === redditLogo ? "reddit-logo" : "quintara-logo"
+            }
+            src={logoSource}
+          />
+        </div>
       </div>
     </div>
   );
