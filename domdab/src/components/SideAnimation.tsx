@@ -4,9 +4,10 @@ import redditLogo from "../assets/RedditLogo.png";
 interface SideAnimationProps {
   children: React.ReactNode;
   logoSource: string | undefined;
+  title: string;
 }
 
-const SideAnimation = ({ children, logoSource }: SideAnimationProps) => {
+const SideAnimation = ({ children, logoSource, title }: SideAnimationProps) => {
   const [isOpen, setIsOpen] = useState(false);
   const [fireAnimation, setFireAnimation] = useState(false);
   const handleOpen = () => {
@@ -32,6 +33,7 @@ const SideAnimation = ({ children, logoSource }: SideAnimationProps) => {
             src={logoSource}
           />
         </div>
+        <div>{title} </div>
       </div>
     </div>
   );
