@@ -4,10 +4,9 @@ import redditLogo from "../assets/RedditLogo.png";
 interface SideAnimationProps {
   children: React.ReactNode;
   logoSource: string | undefined;
-  title: string;
 }
 
-const SideAnimation = ({ children, logoSource, title }: SideAnimationProps) => {
+const SideAnimation = ({ children, logoSource }: SideAnimationProps) => {
   const [isOpen, setIsOpen] = useState(false);
   const [fireAnimation, setFireAnimation] = useState(false);
   const handleOpen = () => {
@@ -20,22 +19,26 @@ const SideAnimation = ({ children, logoSource, title }: SideAnimationProps) => {
   return isOpen ? (
     <div className="work-card">{children} </div>
   ) : (
-    <div className="box">
-      <div
-        className={`side-animation ${fireAnimation ? "animate-job" : ""}`}
-        onClick={handleOpen}
-      >
-        <div className="logo-box">
-          <img
-            className={
-              logoSource === redditLogo ? "reddit-logo" : "quintara-logo"
-            }
-            src={logoSource}
-          />
+    <>
+      <div className="box flex flex-row-reverse items-center justify-between">
+        <div className="mr-[35%]">
+          <div>Hello</div>
         </div>
-        <div>{title} </div>
+        <div
+          className={`side-animation ${fireAnimation ? "animate-job" : ""}`}
+          onClick={handleOpen}
+        >
+          <div className="logo-box">
+            <img
+              className={
+                logoSource === redditLogo ? "reddit-logo" : "quintara-logo"
+              }
+              src={logoSource}
+            />
+          </div>
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 
