@@ -1,5 +1,3 @@
-<<<<<<< Updated upstream
-=======
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -28,4 +26,3 @@ const NavBar = () => {
 };
 
 export default NavBar;
->>>>>>> Stashed changes
