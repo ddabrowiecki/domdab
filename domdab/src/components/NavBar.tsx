@@ -15,8 +15,10 @@ const NavBar = () => {
       <NavigationMenuList>
         <NavigationMenuItem>
           <NavigationMenuTrigger><Link to="/">Home</Link></NavigationMenuTrigger>
-          <NavigationMenuTrigger><Link to="/eng_history">Engineering Experience</Link></NavigationMenuTrigger>
-          <NavigationMenuTrigger>Projects</NavigationMenuTrigger>
+          <NavigationMenuTrigger><Link to="/eng_history">Eng. Experience</Link></NavigationMenuTrigger>
+          <NavigationMenuTrigger>Eng. Projects</NavigationMenuTrigger>
+          <NavigationMenuTrigger>Languages</NavigationMenuTrigger>
+          <NavigationMenuTrigger>Previous Career</NavigationMenuTrigger>
           <NavigationMenuTrigger>Volunteer</NavigationMenuTrigger>
           <NavigationMenuTrigger>Hobbies</NavigationMenuTrigger>
         </NavigationMenuItem>
