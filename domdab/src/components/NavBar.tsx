@@ -14,7 +14,7 @@ const NavBar = () => {
         <NavigationMenuItem>
           <NavigationMenuTrigger><Link to="/">Home</Link></NavigationMenuTrigger>
           <NavigationMenuTrigger><Link to="/eng_history">Eng. Experience</Link></NavigationMenuTrigger>
-          <NavigationMenuTrigger>Eng. Projects</NavigationMenuTrigger>
+          <NavigationMenuTrigger><Link to="/eng_projects">Eng. Projects</Link></NavigationMenuTrigger>
           <NavigationMenuTrigger>Previous Career</NavigationMenuTrigger>
           <NavigationMenuTrigger>Languages</NavigationMenuTrigger>
           <NavigationMenuTrigger>Volunteer</NavigationMenuTrigger>
