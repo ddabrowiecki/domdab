@@ -17,13 +17,13 @@ export interface Job {
   projects: Project[] | null;
 }
 
-export const jobHistory: Job[] = [
+export const engJobHistory: Job[] = [
   {
     company: "Quintara Biosciences",
     description: "Front end Software Engineer for a small DNA sequencing company",
     datesWorked: "April 2023 - present",
     logoSource: quintaraLogo,
-    logoHeight: "1/5",
+    logoHeight: "20%",
     projects: [
       {
         value: "plasmid-order",
@@ -40,9 +40,11 @@ export const jobHistory: Job[] = [
   {
     company: "Reddit",
     description: "Full stack software engineer developing a tool for the Anti-Evil team to fight abuse at scale",
-    datesWorked: "May 2016 - Feb 2023",
+    datesWorked: "April 2020 - Feb 2023",
     logoSource: redditLogo,
-    logoHeight: "full",
+    logoHeight: "100%",
     projects: null,
   },
 ];
+
+export const prevJobHistory: Job[] = []
