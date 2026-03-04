@@ -1,6 +1,7 @@
 import { type Job } from "@/data/JobData";
 import redditTrackerLogo from "@/assets/RedditTrackerLogo.png";
 import writeMomLogo from "@/assets/WMLogo2.png";
+import taruLogo from "@/assets/Ta-Ru.png"
 
 export const engProjects: Job[] = [
   {
@@ -35,7 +36,7 @@ export const engProjects: Job[] = [
       and sends notifications to the user on a set schedule reminding them to reach out to the contact -- IN PROGRESS`,
     datesWorked: "2025",
     logoSource: writeMomLogo,
-    logoHeight: "55%",
+    logoHeight: "70%",
     projects: [
       {
         value: "langs",
@@ -72,8 +73,8 @@ export const engProjects: Job[] = [
     largely indigenous Panamanian community -- 
     special focus given to "tech disadvantaged" individuals (elderly, less financial means) -- IN PROGRESS`,
     datesWorked: "2026",
-    // logoSource: writeMomLogo,
-    // logoHeight: "55%",
+    logoSource: taruLogo,
+    logoHeight: "75%",
     projects: [
       {
         value: "langs",
