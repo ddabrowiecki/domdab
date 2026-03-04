@@ -1,17 +1,15 @@
-import ContentCard from "./JobCard";
+import JobCard from "./JobCard";
 import SideAnimation from "./SideAnimation";
-import redditLogo from "../assets/RedditLogo.png";
 
-const EngHistory = () => {
-  return (
+import { jobHistory, type Job } from "@/assets/JobData";
+
+const EngHistory = () =>
+  jobHistory.map((job: Job) => (
     <>
-      <div>
-        <SideAnimation logoSource={redditLogo}>
-          <ContentCard text="I worked here" />
-        </SideAnimation>
-      </div>
+      <SideAnimation key={job.company} logoSource={job.logoSource} logoHeight={job.logoHeight} companyName={job.company}>
+        <JobCard job={job} />
+      </SideAnimation>
     </>
-  );
-};
+  ));
 
 export default EngHistory;
