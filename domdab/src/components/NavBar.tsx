@@ -12,13 +12,13 @@ const NavBar = () => {
     <NavigationMenu>
       <NavigationMenuList>
         <NavigationMenuItem>
-          <NavigationMenuTrigger><Link to="/">Home</Link></NavigationMenuTrigger>
-          <NavigationMenuTrigger><Link to="/eng_history">Eng. Experience</Link></NavigationMenuTrigger>
-          <NavigationMenuTrigger><Link to="/eng_projects">Eng. Projects</Link></NavigationMenuTrigger>
-          <NavigationMenuTrigger>Previous Career</NavigationMenuTrigger>
-          <NavigationMenuTrigger>Languages</NavigationMenuTrigger>
-          <NavigationMenuTrigger>Volunteer</NavigationMenuTrigger>
-          <NavigationMenuTrigger>Hobbies</NavigationMenuTrigger>
+          <NavigationMenuTrigger className="ml-2"><Link to="/">Home</Link></NavigationMenuTrigger>
+          <NavigationMenuTrigger className="ml-2"><Link to="/eng_history">Eng. Experience</Link></NavigationMenuTrigger>
+          <NavigationMenuTrigger className="ml-2"><Link to="/eng_projects">Eng. Projects</Link></NavigationMenuTrigger>
+          <NavigationMenuTrigger className="ml-2">Previous Career</NavigationMenuTrigger>
+          <NavigationMenuTrigger className="ml-2"><Link to="/languages">Languages</Link></NavigationMenuTrigger>
+          <NavigationMenuTrigger className="ml-2">Volunteer</NavigationMenuTrigger>
+          <NavigationMenuTrigger className="ml-2">Hobbies</NavigationMenuTrigger>
         </NavigationMenuItem>
       </NavigationMenuList>
     </NavigationMenu>
