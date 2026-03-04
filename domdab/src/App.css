@@ -133,60 +133,6 @@
   padding-left: 2%;
 }
 
-@keyframes slideRight {
-	0% {
-		transform: translateX(0);
-	}
-
-	100% {
-		transform: translateX(100%);
-	}
-}
-
-@keyframes fade {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-  
-}
-.side-animation.animate-job {
-  animation: slideRight 2s ease 0s 1 normal forwards, fade 1s ease 0s 1 normal forwards;
-}
-.side-animation {
-  margin-top: 50px;
-  background-color: rgba(137, 207, 240, 1);
-  height: 200px;
-  padding: 10px;
-  clip-path: polygon(0% 0%, 20% 0%, 25% 50%, 20% 100%, 0% 100%);
-  border-radius: calc(var(--radius) + 4px);
-}
-
-.side-animation:hover {
-  background-color: rgba(137, 207, 240, 0.8);
-}
-
-.box {
-  background-color: rgba(137, 207, 240, 0.3);
-  border-radius: calc(var(--radius) + 4px);
-  height: 100%;
-}
-
 .work-card {
   margin-top: 50px;
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  } 
-  100% {
-    opacity: 1;
-  }
-}
-.content-card {
-  background-color: rgba(0, 0, 255, .1);
-  animation: fadeIn 2s ease 0s 1 normal forwards ;
 }

@@ -6,8 +6,7 @@ import { jobHistory, type Job } from "@/assets/JobData";
 const EngHistory = () =>
   jobHistory.map((job: Job) => (
     <>
-      <SideAnimation logoSource={job.logoSource}>
-      <div>{job.company}</div>
+      <SideAnimation key={job.company} logoSource={job.logoSource} companyName={job.company}>
         <JobCard job={job} />
       </SideAnimation>
     </>
