@@ -26,7 +26,9 @@ const JobCard = ({ job }: JobCardProps) => {
         <CardDescription>{job.description}</CardDescription>
       </CardHeader>
       <CardContent className="flex justify-around">
-        <div>Hello</div>
+        <div className="h-50">
+          <img className={`h-${job.logoHeight} pl-[2%]`} src={job.logoSource}/>
+        </div>
         <ProjectDropdown projects={job.projects} />
       </CardContent>
     </Card>

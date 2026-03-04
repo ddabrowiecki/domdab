@@ -1,13 +1,18 @@
 import React, { useState } from "react";
-import redditLogo from "../assets/RedditLogo.png";
 
 interface SideAnimationProps {
   children: React.ReactNode;
   logoSource: string | undefined;
+  logoHeight: string | undefined;
   companyName: string;
 }
 
-const SideAnimation = ({ children, logoSource, companyName }: SideAnimationProps) => {
+const SideAnimation = ({
+  children,
+  logoSource,
+  logoHeight,
+  companyName,
+}: SideAnimationProps) => {
   const [isOpen, setIsOpen] = useState(false);
   const [fireAnimation, setFireAnimation] = useState(false);
   const handleOpen = () => {
@@ -21,8 +26,8 @@ const SideAnimation = ({ children, logoSource, companyName }: SideAnimationProps
     <div className="work-card">{children} </div>
   ) : (
     <>
-      <div className="box flex flex-row-reverse items-center justify-between">
-        <div className="mr-[35%]">
+      <div className="box flex flex-row-reverse items-center justify-between mt-4">
+        <div className="mr-[35%] text-3xl">
           <div>{companyName}</div>
         </div>
         <div
@@ -30,12 +35,7 @@ const SideAnimation = ({ children, logoSource, companyName }: SideAnimationProps
           onClick={handleOpen}
         >
           <div className="logo-box">
-            <img
-              className={
-                logoSource === redditLogo ? "reddit-logo" : "quintara-logo"
-              }
-              src={logoSource}
-            />
+            <img className={`h-${logoHeight} pl-[2%]`} src={logoSource} />
           </div>
         </div>
       </div>
