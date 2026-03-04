@@ -5,7 +5,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
-import { type Project } from "@/assets/JobData";
+import { type Project } from "@/data/JobData";
 
 interface ProjectDropdownProps {
   projects: Project[] | null;

@@ -23,19 +23,19 @@ const SideAnimation = ({
     }, 1000);
   };
   return isOpen ? (
-    <div className="work-card">{children} </div>
+    <div className="mt-4">{children} </div>
   ) : (
     <>
       <div className="box flex flex-row-reverse items-center justify-between mt-4">
         <div className="mr-[35%] text-3xl">
-          <div>{companyName}</div>
+          <div className={`job-name ${fireAnimation ? "fade" : ""}`}>{companyName}</div>
         </div>
         <div
           className={`side-animation ${fireAnimation ? "animate-job" : ""}`}
           onClick={handleOpen}
         >
-          <div className="logo-box">
-            <img className={`h-${logoHeight} pl-[2%]`} src={logoSource} />
+          <div className="flex items-center h-50">
+            <img className={`pl-[2%]`} style={{height: `${logoHeight}`}} src={logoSource} />
           </div>
         </div>
       </div>

@@ -8,7 +8,7 @@ import {
 
 import { Badge } from "@/components/ui/badge";
 
-import { type Job } from "@/assets/JobData";
+import { type Job } from "@/data/JobData";
 import ProjectDropdown from "./ProjectDropdown";
 
 interface JobCardProps {
@@ -19,7 +19,7 @@ const JobCard = ({ job }: JobCardProps) => {
   return (
     <Card className="content-card">
       <CardHeader>
-        <div className="flex justify-between">
+        <div className="flex justify-around">
         <CardTitle>{job.company}</CardTitle>
         <Badge variant="outline">{job.datesWorked}</Badge>
         </div>
@@ -27,7 +27,7 @@ const JobCard = ({ job }: JobCardProps) => {
       </CardHeader>
       <CardContent className="flex justify-around">
         <div className="h-50">
-          <img className={`h-${job.logoHeight} pl-[2%]`} src={job.logoSource}/>
+          <img className={`pl-[2%]`} style={{height: `${job.logoHeight}`}} src={job.logoSource}/>
         </div>
         <ProjectDropdown projects={job.projects} />
       </CardContent>
