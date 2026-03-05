@@ -8,29 +8,30 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { type LanguageDetail } from "@/data/LanguageData";
 
-export function CardImage() {
+const GridCard = ({ name, level, image, emoji, moreInfo }: LanguageDetail) => {
   return (
     <Card className="relative mx-auto w-full max-w-sm pt-0">
-      <div className="absolute inset-0 z-30 aspect-video bg-black/35" />
+      <div className="absolute inset-0 z-30 aspect-video" />
       <img
-        src="https://avatar.vercel.sh/shadcn1"
+        src={image}
         alt="Event cover"
-        className="relative z-20 aspect-video w-full object-cover brightness-60 grayscale dark:brightness-40"
+        className="relative z-20 aspect-video w-full object-cover brightness-90 dark:brightness-40"
       />
+      <div className="h-10 mt-[-15%] z-40 flex justify-center">
+        <img className="h-[150%]" src={emoji} />
+      </div>
       <CardHeader>
-        <CardAction>
-          <Badge variant="secondary">Featured</Badge>
-        </CardAction>
-        <CardTitle>Design systems meetup</CardTitle>
-        <CardDescription>
-          A practical talk on component APIs, accessibility, and shipping
-          faster.
-        </CardDescription>
+        <CardAction></CardAction>
+        <CardTitle>{name}</CardTitle>
+        <CardDescription>{level}</CardDescription>
       </CardHeader>
       <CardFooter>
-        <Button className="w-full">View Event</Button>
+        {moreInfo && <Button className="w-full">More</Button>}
       </CardFooter>
     </Card>
   );
-}
+};
+
+export default GridCard;
