@@ -19,7 +19,7 @@ const GridCard = ({ name, level, image, emoji, moreInfo }: LanguageDetail) => {
         alt="Event cover"
         className="relative z-20 aspect-video w-full object-cover brightness-90 dark:brightness-40"
       />
-      <div className="h-10 mt-[-15%] z-40 flex justify-center">
+      <div className="lang-flag h-10 mt-[-15%] z-40 flex justify-center">
         <img className="h-[150%]" src={emoji} />
       </div>
       <CardHeader>

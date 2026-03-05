@@ -3,23 +3,7 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-  background-color: rgb(0, 0, 255, .1);
-}
-
-@font-face {
-  font-family: 'Noto Color Emoji';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/notocoloremoji/v32/Yq6P-KqIXTD0t4D9z1ESnKM3-HpFabsE4tq3luCC7p-aXxcn.0.woff2) format('woff2');
-  unicode-range: U+1f1e6-1f1ff;
-}
-
-.noto-color-emoji-regular {
-  font-family: "Noto Color Emoji", sans-serif;
-  color: #2d2d2d;
-  font-weight: 400;
-  font-style: normal;
+  background-color: rgb(0, 0, 255, 0.1);
 }
 
 .card {
@@ -99,4 +83,18 @@
 
 .intro {
   font-size: 30px;
+}
+
+@keyframes rotate45 {
+  25% {
+    rotate: -20deg;
+  }
+  75% {
+    rotate: 20deg;
+  }
+}
+
+.lang-flag:hover {
+  animation: rotate45 3s linear infinite forwards;
+  cursor: pointer;
 }
