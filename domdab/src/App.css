@@ -3,7 +3,7 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-  background-color: rgb(0, 0, 255, .1);
+  background-color: rgb(0, 0, 255, 0.1);
 }
 
 .card {
@@ -83,4 +83,18 @@
 
 .intro {
   font-size: 30px;
+}
+
+@keyframes rotate45 {
+  25% {
+    rotate: -20deg;
+  }
+  75% {
+    rotate: 20deg;
+  }
+}
+
+.lang-flag:hover {
+  animation: rotate45 3s linear infinite forwards;
+  cursor: pointer;
 }
