@@ -19,7 +19,7 @@ const CarouselComponent = ({ images }: CarouselProps) => {
           <CarouselItem key={image}>
             <div className="p-1">
               <Card>
-                <CardContent className="flex aspect-square items-center justify-center p-6">
+                <CardContent className="flex aspect-square items-center justify-center p-0">
                   <img src={image} />
                 </CardContent>
               </Card>
