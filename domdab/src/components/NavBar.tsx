@@ -17,7 +17,7 @@ const NavBar = () => {
           <NavigationMenuTrigger className="ml-2"><Link to="/eng_projects">Eng. Projects</Link></NavigationMenuTrigger>
           <NavigationMenuTrigger className="ml-2">Previous Career</NavigationMenuTrigger>
           <NavigationMenuTrigger className="ml-2"><Link to="/languages">Languages</Link></NavigationMenuTrigger>
-          <NavigationMenuTrigger className="ml-2">Volunteer</NavigationMenuTrigger>
+          <NavigationMenuTrigger className="ml-2"><Link to="/volunteer">Volunteer</Link></NavigationMenuTrigger>
           {/* <NavigationMenuTrigger className="ml-2">Hobbies</NavigationMenuTrigger> */}
         </NavigationMenuItem>
       </NavigationMenuList>

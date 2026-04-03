@@ -1,30 +1,32 @@
 import {
   Card,
-  CardAction,
-  CardContent,
   CardDescription,
   CardHeader,
   CardTitle,
+  CardContent,
 } from "@/components/ui/card";
+import CarouselComponent from "./Carousel";
+import { type ContentDetail } from "@/data/utils";
 
-interface ContentCardProps {
-  text: string;
-}
-
-const ContentCard = ({ text }: ContentCardProps) => {
+const ContentCard = ({ name, description, images, logo }: ContentDetail) => {
   return (
-    <>
-      <Card className="content-card">
-        <CardHeader>
-          <CardTitle>Card Title</CardTitle>
-          <CardDescription>{text}</CardDescription>
-          <CardAction>Card Action</CardAction>
-        </CardHeader>
-        <CardContent>
-          <p>Card Content</p>
-        </CardContent>
-      </Card>
-    </>
+    <Card className="mt-5 items-center flex-row justify-between px-20">
+      <div>
+        {images ? (
+          <CarouselComponent images={images} />
+        ) : (
+          <CardContent>
+            <div className="h-50 w-50 items-center">
+              <img src={logo} />
+            </div>
+          </CardContent>
+        )}
+      </div>
+      <CardHeader className="flex flex-col w-[30%] items-center">
+        <CardTitle>{name}</CardTitle>
+        <CardDescription>{description}</CardDescription>
+      </CardHeader>
+    </Card>
   );
 };
 
