@@ -17,7 +17,7 @@ interface JobCardProps {
 
 const JobCard = ({ job }: JobCardProps) => {
   return (
-    <Card className="content-card">
+    <Card className="content-card mt-5">
       <CardHeader>
         <div className="flex justify-around">
         <CardTitle>{job.company}</CardTitle>
