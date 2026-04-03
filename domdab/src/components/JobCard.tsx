@@ -8,7 +8,7 @@ import {
 
 import { Badge } from "@/components/ui/badge";
 
-import { type Job } from "@/data/JobData";
+import { type Job } from "@/data/jobData";
 import ProjectDropdown from "./ProjectDropdown";
 
 interface JobCardProps {

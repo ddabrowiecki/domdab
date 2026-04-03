@@ -1,5 +1,5 @@
-import { type Job } from "@/data/JobData";
-import { engProjects } from "@/data/ProjectsData";
+import { type Job } from "@/data/jobData";
+import { engProjects } from "@/data/projectsData";
 import SideAnimation from "./SideAnimation";
 import JobCard from "./JobCard";
 
