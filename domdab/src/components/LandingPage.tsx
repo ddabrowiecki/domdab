@@ -1,4 +1,5 @@
 import DomProfilePic from "../assets/DomProfilePic.jpg";
+import resume from "@/assets/Dabrowiecki-FS2026.pdf"
 import {
   landingPageCopyHead,
   landingPageCopyEnding,
@@ -8,6 +9,11 @@ import {
 const LandingPage = () => {
   return (
     <>
+    <div className="mt-10 flex justify-around text-fuchsia-700 underline">
+      <a href={`${resume}`} download="DDabrowiecki-2026.pdf"><em>Download a Current Resume!</em></a>
+      <a href="https://www.github.com/ddabrowiecki"><em>See My Projects on Github!</em></a>
+      <a href="https://www.linkedin.com/in/dominic-v-dabrowiecki/"><em>Check out my LinkedIn Page!</em></a>
+    </div>
       <div className="flex flex-row items-center justify-around mt-5">
         <img className="profile-pic" src={DomProfilePic} />
         <div className="w-[50%]">
