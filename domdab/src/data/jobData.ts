@@ -21,7 +21,7 @@ export const engJobHistory: Job[] = [
   {
     company: "Quintara Biosciences",
     description: "Front end Software Engineer for a small DNA sequencing company",
-    datesWorked: "April 2023 - present",
+    datesWorked: "April 2023 - January 2025",
     logoSource: quintaraLogo,
     logoHeight: "20%",
     projects: [

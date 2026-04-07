@@ -7,6 +7,7 @@ import EngProjects from "./components/EngProjects";
 import LanguagePage from "./components/LanguagePage";
 import VolunteerPage from "./components/VolunteerPage";
 import PreviousCareerPage from "./components/PreviousCareerPage";
+import EducationPage from "./components/EducationPage";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/eng_projects" element={<EngProjects />} />
         <Route path="/previous_career" element={<PreviousCareerPage />} />
         <Route path="/languages" element={<LanguagePage />} />
+        <Route path="/education" element={<EducationPage />} />
         <Route path="/volunteer" element={<VolunteerPage />} />
       </Routes>
     </>
