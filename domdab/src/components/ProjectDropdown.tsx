@@ -5,7 +5,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
-import { type Project } from "@/data/JobData";
+import { type Project } from "@/data/jobData";
 
 interface ProjectDropdownProps {
   projects: Project[] | null;
@@ -17,7 +17,7 @@ const ProjectDropdown: React.FC<ProjectDropdownProps> = (props) => (
       props.projects.map((project: Project) => (
         <AccordionItem key={project.value} value={project.value}>
           <AccordionTrigger>{project.name}</AccordionTrigger>
-          <AccordionContent>{project.description}</AccordionContent>
+          <AccordionContent className="whitespace-pre-wrap">{project.description}</AccordionContent>
         </AccordionItem>
       ))}
   </Accordion>

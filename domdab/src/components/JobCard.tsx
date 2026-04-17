@@ -20,16 +20,22 @@ const JobCard = ({ job }: JobCardProps) => {
     <Card className="content-card mt-5">
       <CardHeader>
         <div className="flex justify-around">
-        <CardTitle>{job.company}</CardTitle>
-        <Badge variant="outline">{job.datesWorked}</Badge>
+          <CardTitle>{job.company}</CardTitle>
+          <Badge variant="outline">{job.datesWorked}</Badge>
         </div>
         <CardDescription>{job.description}</CardDescription>
       </CardHeader>
-      <CardContent className="flex justify-around">
-        <div className="h-50">
-          <img className={`pl-[2%]`} style={{height: `${job.logoHeight}`}} src={job.logoSource}/>
+      <CardContent className="flex justify-between">
+        <div className="h-50 flex items-center ml-[10%]">
+          <img
+            className={`pl-[2%]`}
+            style={{ height: `${job.logoHeight}` }}
+            src={job.logoSource}
+          />
         </div>
-        <ProjectDropdown projects={job.projects} />
+        <div className="w-[40%]">
+          <ProjectDropdown projects={job.projects} />
+        </div>
       </CardContent>
     </Card>
   );

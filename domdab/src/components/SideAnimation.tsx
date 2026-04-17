@@ -20,7 +20,7 @@ const SideAnimation = ({
     setTimeout(() => {
       setFireAnimation(false);
       setIsOpen(true);
-    }, 1000);
+    }, 500);
   };
   return isOpen ? (
     <div className="mt-4">{children} </div>
