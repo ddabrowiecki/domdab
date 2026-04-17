@@ -33,13 +33,13 @@
   }
 }
 .job-name.fade {
-  animation: fade 1s ease 0s 1 normal forwards;
+  animation: fade .5s ease 0s 1 normal forwards;
 }
 
 .side-animation.animate-job {
   animation:
-    slideRight 2s ease 0s 1 normal forwards,
-    fade 1s ease 0s 1 normal forwards;
+    slideRight 1s ease 0s 1 normal forwards,
+    fade .5s ease 0s 1 normal forwards;
 }
 .side-animation {
   background-color: rgba(137, 207, 240, 1);
@@ -71,7 +71,7 @@
 }
 .content-card {
   background-color: rgba(0, 0, 255, 0.1);
-  animation: fadeIn 2s ease 0s 1 normal forwards;
+  animation: fadeIn 1s ease 0s 1 normal forwards;
 }
 
 .profile-pic {
