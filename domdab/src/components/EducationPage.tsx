@@ -7,12 +7,12 @@ const EducationPage = () => {
     <>
       <p className="mt-10">Programming Certifications</p>
       {certificationData.map((job: Job) => (
-        <JobCard job={job} />
+        <JobCard key={job.company} job={job} />
       ))}
       <p className="mt-10">Education</p>
       <div className="whitespace-pre-wrap">
         {educationData.map((job: Job) => (
-          <JobCard job={job} />
+          <JobCard key={job.company} job={job} />
         ))}
       </div>
     </>

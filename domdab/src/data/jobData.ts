@@ -1,5 +1,6 @@
 import redditLogo from "../assets/RedditLogo.png";
 import quintaraLogo from "../assets/quintaralogo.png";
+import domDabLogo from "../assets/domdab.png"
 
 export interface Project {
   value: string;
@@ -18,6 +19,30 @@ export interface Job {
 }
 
 export const engJobHistory: Job[] = [
+  {
+    company: "Freelance",
+    description: "Worked as a freelancer and focused on engineering projects to launch as businesses",
+    datesWorked: "January 2025 - present",
+    logoSource: domDabLogo,
+    logoHeight: "70%",
+    projects: [
+      {
+        value: "oeis-web",
+        name: "OEIS Website",
+        description: "Maintained and added features to the website for a national association of endovascular physicians",
+      },
+      {
+        value: "write-mom",
+        name: "Developed WriteMom app",
+        description: "See Eng. Projects tab",
+      },
+      {
+        value: "taru",
+        name: "Developed TaRu app",
+        description: "See Eng. Projects tab",
+      },
+    ]
+  },
   {
     company: "Quintara Biosciences",
     description:
@@ -45,7 +70,7 @@ export const engJobHistory: Job[] = [
       "Full stack software engineer developing a tool for the Anti-Evil team to fight abuse at scale",
     datesWorked: "April 2020 - Feb 2023",
     logoSource: redditLogo,
-    logoHeight: "100%",
+    logoHeight: "70%",
     projects: [
       {
         value: "report-abuse-queue",

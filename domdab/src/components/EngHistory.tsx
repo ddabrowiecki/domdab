@@ -5,16 +5,15 @@ import { engJobHistory, type Job } from "@/data/jobData";
 
 const EngHistory = () =>
   engJobHistory.map((job: Job) => (
-    <>
+    <div key={job.company}>
       <SideAnimation
-        key={job.company}
         logoSource={job.logoSource}
         logoHeight={job.logoHeight}
         companyName={job.company}
       >
         <JobCard job={job} />
       </SideAnimation>
-    </>
+    </div>
   ));
 
 export default EngHistory;
