@@ -1,5 +1,5 @@
 import GridCard from "./GridCard";
-import { languageData, type LanguageDetail } from "@/data/LanguageData";
+import { languageData, type LanguageDetail } from "@/data/langData";
 
 const LanguagePage = () => {
   return (

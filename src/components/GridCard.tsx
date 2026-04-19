@@ -7,7 +7,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { type LanguageDetail } from "@/data/LanguageData";
+import { type LanguageDetail } from "@/data/langData";
 
 const GridCard = ({ name, level, image, emoji, moreInfo }: LanguageDetail) => {
   return (
