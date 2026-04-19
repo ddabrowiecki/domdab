@@ -1,4 +1,4 @@
-import { type Job } from "@/data/JobData";
+import { type Job } from "@/data/jobData";
 import redditTrackerLogo from "@/assets/RedditTrackerLogo.png";
 import writeMomLogo from "@/assets/WMLogo2.png";
 import taruLogo from "@/assets/Ta-Ru.png"
