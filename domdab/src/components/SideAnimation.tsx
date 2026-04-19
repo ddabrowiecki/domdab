@@ -35,7 +35,7 @@ const SideAnimation = ({
           onClick={handleOpen}
         >
           <div className="flex items-center h-50">
-            <img className={`pl-[2%]`} style={{height: `${logoHeight}`}} src={logoSource} />
+            <img className={`pl-[2%] pb-[4%]`} style={{height: `${logoHeight}`}} src={logoSource} />
           </div>
         </div>
       </div>
