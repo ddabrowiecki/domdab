@@ -20,7 +20,7 @@ export interface Job {
 
 export const engJobHistory: Job[] = [
   {
-    company: "Self-Employed Freelancer",
+    company: "Freelance",
     description: "Worked as a freelancer and focused on engineering projects to launch as businesses",
     datesWorked: "January 2025 - present",
     logoSource: domDabLogo,
@@ -38,7 +38,7 @@ export const engJobHistory: Job[] = [
       },
       {
         value: "taru",
-        name: "Developed Ta-ru app",
+        name: "Developed TaRu app",
         description: "See Eng. Projects tab",
       },
     ]

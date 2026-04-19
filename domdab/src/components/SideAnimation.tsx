@@ -25,21 +25,31 @@ const SideAnimation = ({
   return isOpen ? (
     <div className="mt-4">{children} </div>
   ) : (
-    <>
-      <div className="box flex flex-row-reverse items-center justify-between mt-4">
-        <div className="mr-[35%] text-3xl">
-          <div className={`job-name ${fireAnimation ? "fade" : ""}`}>{companyName}</div>
+    <div className="side-wrapper relative">
+      <div className="flex items-center justify-center absolute w-[100%] h-[100%]">
+        <div className="text-3xl">
+          <div className="justify-center whitespace-pre-wrap">
+            <div className={`job-name ${fireAnimation ? "fade" : ""}`}>
+              {companyName}
+            </div>
+          </div>
         </div>
+      </div>
+      <div className="box flex flex-start items-center mt-4">
         <div
           className={`side-animation ${fireAnimation ? "animate-job" : ""}`}
           onClick={handleOpen}
         >
           <div className="flex items-center h-50">
-            <img className={`pl-[2%] pb-[4%]`} style={{height: `${logoHeight}`}} src={logoSource} />
+            <img
+              className={`pl-[2%] pb-[4%]`}
+              style={{ height: `${logoHeight}` }}
+              src={logoSource}
+            />
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
