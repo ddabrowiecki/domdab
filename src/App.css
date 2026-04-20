@@ -74,13 +74,6 @@
   animation: fadeIn 1s ease 0s 1 normal forwards;
 }
 
-.profile-pic {
-  height: 450px;
-  width: 350px;
-  border-radius: 25%;
-  object-position: center;
-}
-
 .intro {
   font-size: 30px;
 }
