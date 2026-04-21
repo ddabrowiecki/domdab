@@ -1,3 +1,6 @@
+
+@reference "./index.css";
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -36,29 +39,15 @@
   animation: fade .5s ease 0s 1 normal forwards;
 }
 
+
 .side-animation.animate-job {
   animation:
     slideRight 1s ease 0s 1 normal forwards,
     fade .5s ease 0s 1 normal forwards;
 }
-.side-animation {
-  background-color: rgba(137, 207, 240, 1);
-  height: 200px;
-  width: 35%;
-  padding: 10px;
-  clip-path: polygon(0% 0%, 50% 0%, 65% 50%, 50% 100%, 0% 100%);
-  border-radius: calc(var(--radius) + 4px);
-}
 
 .side-animation:hover {
   background-color: rgba(137, 207, 240, 0.8);
-  cursor: pointer;
-}
-
-.box {
-  background-color: rgba(137, 207, 240, 0.3);
-  border-radius: calc(var(--radius) + 4px);
-  height: 100%;
 }
 
 @keyframes fadeIn {
