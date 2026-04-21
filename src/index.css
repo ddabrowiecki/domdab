@@ -118,3 +118,26 @@
     @apply bg-background text-foreground;
   }
 }
+@utility side-animation {
+  background-color: rgba(137, 207, 240, 1);
+  height: 100px;
+  width: 75%;
+  padding: 10px;
+  clip-path: polygon(0% 0%, 50% 0%, 65% 50%, 50% 100%, 0% 100%);
+  border-radius: calc(var(--radius) + 4px);
+}
+
+@utility side-animation-desktop {
+  background-color: rgba(137, 207, 240, 1);
+  height: 200px;
+  width: 35%;
+  padding: 10px;
+  clip-path: polygon(0% 0%, 50% 0%, 65% 50%, 50% 100%, 0% 100%);
+  border-radius: calc(var(--radius) + 4px);
+}
+
+@utility box {
+  background-color: rgba(137, 207, 240, 0.3);
+  border-radius: calc(var(--radius) + 4px);
+  height: 100%;
+}

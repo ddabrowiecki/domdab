@@ -13,7 +13,7 @@ interface CarouselProps {
 
 const CarouselComponent = ({ images }: CarouselProps) => {
   return (
-    <Carousel className="w-full max-w-[12rem] sm:max-w-xs">
+    <Carousel className="w-full max-w-[12rem] sm:max-w-s">
       <CarouselContent>
         {images.map((image: string) => (
           <CarouselItem key={image}>
