@@ -4,7 +4,7 @@ const NavBar = () => {
   const location = useLocation();
 
   const navItems = [
-    { label: "Services", path: "/" },
+    { label: "About Me", path: "/" },
     { label: "Experience", path: "/eng_history" },
     { label: "Projects", path: "/eng_projects" },
     { label: "Previous Careers", path: "/previous_career"},
