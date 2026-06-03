@@ -1,41 +1,59 @@
-import DomProfilePic from "../assets/DomProfilePic.jpg";
+import DomProfilePicNoBG from "../assets/DomProfilePicNoBG.png";
 import resume from "@/assets/Dabrowiecki-FS2026.pdf";
-import {
-  landingPageCopyHead,
-  landingPageCopyEnding,
-  landingPageCopyItalic,
-} from "@/data/utils";
+import { Github, Linkedin, Briefcase } from "lucide-react";
 
 const LandingPage = () => {
   return (
-    <>
-      <div className="mt-10 flex justify-around text-fuchsia-700 underline">
-        <a href={`${resume}`} download="DDabrowiecki-2026.pdf">
-          <em>Download a Current Resume!</em>
-        </a>
-        <a href="https://www.github.com/ddabrowiecki">
-          <em>See My Projects on Github!</em>
-        </a>
-        <a href="https://www.linkedin.com/in/dominic-v-dabrowiecki/">
-          <em>Check out my LinkedIn Page!</em>
-        </a>
-      </div>
-        <div className="sm:flex sm:flex-row sm:justify-around mt-5">
-          <img className="h-[200px] ml-[25%] sm:ml-0 rounded-md sm:h-[450px] sm:w-[350px]" src={DomProfilePic} />
-          <div className="mt-10 sm:w-[50%]">
-            <p className="intro">Hi, I'm Dom!</p>
-            <p className="whitespace-pre-wrap pt-5 text-xs sm:text-lg">
-              {landingPageCopyHead}
+    <div className="min-h-screen bg-gradient-to-br from-indigo-200 via-indigo-100 to-purple-200 pt-24 px-6">
+      <div className="max-w-7xl mx-auto">
+        <div className="flex flex-col lg:flex-row items-center gap-12">
+
+          <div className="flex-1 text-white">
+            <h1 className="text-6xl sm:text-7xl font-bold mb-6">
+              Dominic<br />Dabrowiecki.
+            </h1>
+            
+            <div className="w-20 h-1 bg-blue-600 mb-8"></div>
+
+            <div className="flex gap-6 mb-12">
+              <a href="https://www.linkedin.com/in/dominic-v-dabrowiecki/" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-full border-2 border-white flex items-center justify-center hover:bg-white hover:bg-opacity-20 transition">
+                <Linkedin size={18} />
+              </a>
+              <a href="https://www.github.com/ddabrowiecki" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-full border-2 border-white flex items-center justify-center hover:bg-white hover:bg-opacity-20 transition">
+                <Github size={18} />
+              </a>
+              <a href={`${resume}`} download="DDabrowiecki-2026.pdf" className="w-8 h-8 rounded-full border-2 border-white flex items-center justify-center hover:bg-white hover:bg-opacity-20 transition">
+                <Briefcase size={18} />
+              </a>
+            </div>
+          </div>
+
+          <div className="flex-1 flex flex-col">
+            
+            <h2 className="text-white text-2xl font-semibold mb-4">
+              Hi, I'm Dom! <br />Full-Stack Software Developer,<br />based in the San Francisco Bay Area.
+            </h2>
+
+            <p className="text-gray-200 text-sm leading-relaxed mb-8">
+              I am front-end focused because I love interacting with customers, and have years of experience in Trust & Safety
             </p>
-            <p className="whitespace-pre-wrap pt-10 text-xs sm:text-base italic">
-              {landingPageCopyItalic}
-            </p>
-            <p className="whitespace-pre-wrap pt-10 text-xs sm:text-xs">
-              {landingPageCopyEnding}
-            </p>
+
+            {/* <a href="#story" className="text-blue-600 font-semibold flex items-center gap-2 mb-12 hover:gap-4 transition-all">
+              My story <span>→</span>
+            </a> */}
+
+            <div className="relative group">
+                <img
+                  src={DomProfilePicNoBG}
+                  alt="Profile"
+                  className="w-full max-w-md h-150 object-cover rounded-lg hover:shadow-2xl transition"
+                />
+            </div>
           </div>
         </div>
-    </>
+
+      </div>
+    </div>
   );
 };
 

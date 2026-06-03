@@ -13,7 +13,7 @@ const NavBar = () => {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 right-0 bg-blue-200 bg-opacity-90 backdrop-blur z-50">
+    <nav className="fixed top-0 left-0 right-0 bg-opacity-90 backdrop-blur z-50">
       <div className="max-w-7xl mx-auto px-8 py-6 flex items-center justify-between">
         <Link to="/" className="text-2xl font-bold text-blue-700">
           DD
@@ -26,7 +26,7 @@ const NavBar = () => {
                 to={item.path}
                 className={`text-sm font-medium transition-colors ${
                   location.pathname === item.path
-                    ? "text-gray-700"
+                    ? "text-white"
                     : "text-gray-400 hover:text-gray-600"
                 }`}
               >
