@@ -9,7 +9,6 @@ const NavBar = () => {
     { label: "Projects", path: "/eng_projects" },
     { label: "Previous Careers", path: "/previous_career"},
     { label: "Languages", path: "/languages" },
-    { label: "Volunteer", path: "/volunteer" },
   ];
 
   return (
