@@ -18,12 +18,12 @@ interface JobCardProps {
 const JobCard = ({ job }: JobCardProps) => {
   return (
     <Card className="content-card mt-5">
-      <CardHeader>
+      <CardHeader className="text-lg">
         <div className="flex justify-around">
           <CardTitle>{job.company}</CardTitle>
           <Badge variant="outline">{job.datesWorked}</Badge>
         </div>
-        <CardDescription>{job.description}</CardDescription>
+        <CardDescription className="text-white">{job.description}</CardDescription>
       </CardHeader>
       <CardContent className="flex justify-between">
         <div className="h-50 flex items-center ml-[10%]">

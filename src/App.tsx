@@ -13,6 +13,7 @@ function App() {
   return (
     <>
       <NavBar />
+      <div className="min-h-screen bg-gradient-to-br from-indigo-400 via-indigo-250 to-purple-200 pt-24 px-6 relative">
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/eng_history" element={<EngHistory />} />
@@ -22,6 +23,7 @@ function App() {
         <Route path="/education" element={<EducationPage />} />
         <Route path="/volunteer" element={<VolunteerPage />} />
       </Routes>
+      </div>
     </>
   );
 }

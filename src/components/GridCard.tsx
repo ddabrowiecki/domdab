@@ -23,8 +23,8 @@ const GridCard = ({ name, level, image, emoji, moreInfo }: LanguageDetail) => {
       </div>
       <CardHeader>
         <CardAction></CardAction>
-        <CardTitle className="text-xs sm:text-base">{name}</CardTitle>
-        <CardDescription className="text-xs sm:text-base">{level}</CardDescription>
+        <CardTitle className="text-xs sm:text-base flex justify-center">{name}</CardTitle>
+        <CardDescription className="text-xs sm:text-base flex justify-center">{level}</CardDescription>
       </CardHeader>
       <CardFooter>
         {moreInfo && <Button className="w-full">More</Button>}

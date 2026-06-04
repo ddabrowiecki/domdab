@@ -27,7 +27,7 @@ const NavBar = () => {
                 className={`text-sm font-medium transition-colors ${
                   location.pathname === item.path
                     ? "text-white"
-                    : "text-gray-400 hover:text-gray-600"
+                    : "text-blue-700 hover:text-gray-600"
                 }`}
               >
                 {item.label}
