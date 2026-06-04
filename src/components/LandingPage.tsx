@@ -1,5 +1,5 @@
 import DomProfilePicNoBG from "../assets/DomProfilePicNoBG.png";
-import resume from "@/assets/Dabrowiecki-FS2026.pdf";
+import resume from "@/assets/Dominic V. Dabrowiecki.pdf";
 import { Github, Linkedin, Briefcase } from "lucide-react";
 
 const LandingPage = () => {
@@ -34,8 +34,8 @@ const LandingPage = () => {
                 <Github size={18} />
               </a>
               <a
+              target="_blank"
                 href={`${resume}`}
-                download="DDabrowiecki-2026.pdf"
                 className="w-8 h-8 rounded-full border-2 border-white flex items-center justify-center hover:bg-white hover:bg-opacity-20 transition"
               >
                 <Briefcase size={18} />
