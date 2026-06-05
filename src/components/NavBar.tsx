@@ -18,12 +18,12 @@ const NavBar = () => {
           DD
         </Link>
 
-        <div className="flex gap-8 items-center">
+        <div className="grid grid-cols-2 md:flex gap-2 md:gap-8 md:items-center">
           {navItems.map((item) => (
-            <div key={item.path} className="relative group">
+            <div key={item.path} className="relative group flex justify-center">
               <Link
                 to={item.path}
-                className={`text-sm font-medium transition-colors ${
+                className={`text-xs md:text-sm font-medium transition-colors ${
                   location.pathname === item.path
                     ? "text-white"
                     : "text-blue-700 hover:text-gray-600"

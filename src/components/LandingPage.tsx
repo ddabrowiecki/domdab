@@ -44,14 +44,14 @@ const LandingPage = () => {
           </div>
 
           <div className="flex-1 flex flex-col">
-            <h2 className="text-white md:text-2xl font-semibold mb-4">
+            <h2 className="text-white md:text-2xl font-semibold mb-4 z-10">
               Hi, I'm Dom! <br />
               Full-Stack Software Developer,
               <br />
               based in the San Francisco Bay Area.
             </h2>
 
-            <p className="text-blue-700 text-sm leading-relaxed mb-8 right-0">
+            <p className="text-white md:text-blue-700 text-sm leading-relaxed mb-8 right-0 z-10">
               I am front-end focused because I love interacting with customers, <br/>
               and have years of experience fighting online abuse on <br/> Trust & Safety teams at YouTube and Reddit
             </p>
@@ -61,7 +61,7 @@ const LandingPage = () => {
               </a> */}
           </div>
 
-          <div className="absolute left-1/2 transform -translate-x-1/2 w-1/4 pointer-events-none pt-24">
+          <div className="absolute md:top-auto left-1/2 transform -translate-x-1/2 w-full md:w-1/4 pointer-events-none pt-40 md:pt-24">
             <img
               src={DomProfilePicNoBG}
               alt="Profile"
