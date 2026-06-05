@@ -6,9 +6,9 @@ const LandingPage = () => {
   return (
     <div>
       <div className="max-w-7xl mx-auto">
-        <div className="flex flex-col lg:flex-row items-center gap-70 relative">
+        <div className="flex flex-col lg:flex-row items-center gap-60 md:gap-70 relative">
           <div className="flex-1 text-white z-10">
-            <h1 className="text-6xl sm:text-7xl font-bold mb-6">
+            <h1 className="md:text-7xl text-5xl font-bold mb-6">
               Dominic
               <br />
               Dabrowiecki.
@@ -44,7 +44,7 @@ const LandingPage = () => {
           </div>
 
           <div className="flex-1 flex flex-col">
-            <h2 className="text-white text-2xl font-semibold mb-4">
+            <h2 className="text-white md:text-2xl font-semibold mb-4">
               Hi, I'm Dom! <br />
               Full-Stack Software Developer,
               <br />
