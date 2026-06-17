@@ -52,8 +52,11 @@ const LandingPage = () => {
             </h2>
 
             <p className="text-white md:text-blue-700 text-sm leading-relaxed mb-8 right-0 z-10">
-              I am front-end focused because I love interacting with customers, <br/>
-              and have years of experience fighting online abuse on <br/> Trust & Safety teams at YouTube and Reddit
+              I have a passion for the front-end because I love interacting with customers, <br/>
+              and have years of experience fighting online abuse on <br/> Trust & Safety teams at YouTube and Reddit<br />
+              <br />
+              I am also a seasoned back-end developer, delivering scalable solutions and <br />
+              able to communicate the complex intricacies to non-technical stakeholders.
             </p>
 
             {/* <a href="#story" className="text-blue-600 font-semibold flex items-center gap-2 mb-12 hover:gap-4 transition-all">
