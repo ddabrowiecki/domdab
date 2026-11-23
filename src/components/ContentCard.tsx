@@ -16,8 +16,8 @@ const ContentCard = ({ name, description, images, logo }: ContentDetail) => {
           <CarouselComponent images={images} />
         ) : (
           <CardContent>
-            <div className="sm:h-50 sm:w-50 flex items-center">
-              <img src={logo} />
+            <div className="flex h-40 w-40 shrink-0 items-center justify-center">
+              <img src={logo} alt={`${name} logo`} className="h-full w-full object-contain" />
             </div>
           </CardContent>
         )}

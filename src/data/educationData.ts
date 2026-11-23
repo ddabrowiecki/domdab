@@ -9,7 +9,6 @@ export const certificationData: Job[] = [
     description: "Data Structures and Algorithms Nanodegree",
     datesWorked: "2022",
     logoSource: udacityLogo,
-    logoHeight: "50%",
     projects: [],
   },
   {
@@ -17,7 +16,6 @@ export const certificationData: Job[] = [
     description: "React/Redux Nanodegree",
     datesWorked: "2020",
     logoSource: udacityLogo,
-    logoHeight: "50%",
     projects: [],
   },
     {
@@ -25,7 +23,6 @@ export const certificationData: Job[] = [
     description: "Full Stack Web Developer Nanodegree",
     datesWorked: "2018",
     logoSource: udacityLogo,
-    logoHeight: "50%",
     projects: [],
   },
 ]
@@ -36,7 +33,6 @@ export const educationData: Job[] = [
     description: "",
     datesWorked: "2010 - 2012",
     logoSource: davisLogo,
-    logoHeight: "40%",
     projects: [
         {
         value: "major",
@@ -62,7 +58,6 @@ export const educationData: Job[] = [
     description: "",
     datesWorked: "2003 - 2007",
     logoSource: calLogo,
-    logoHeight: "100%",
     projects: [
          {
         value: "major",

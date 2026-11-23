@@ -9,7 +9,6 @@ const EngProjects = () =>
       <SideAnimation
         key={project.company}
         logoSource={project.logoSource}
-        logoHeight={project.logoHeight}
         companyName={project.company}
       >
         <JobCard job={project} />

@@ -8,7 +8,6 @@ const EngHistory = () =>
     <div key={job.company}>
       <SideAnimation
         logoSource={job.logoSource}
-        logoHeight={job.logoHeight}
         companyName={job.company}
       >
         <JobCard job={job} />

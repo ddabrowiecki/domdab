@@ -3,14 +3,12 @@ import React, { useState } from "react";
 interface SideAnimationProps {
   children: React.ReactNode;
   logoSource: string | undefined;
-  logoHeight: string | undefined;
   companyName: string;
 }
 
 const SideAnimation = ({
   children,
   logoSource,
-  logoHeight,
   companyName,
 }: SideAnimationProps) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -40,14 +38,14 @@ const SideAnimation = ({
       </div>
       <div className="box flex flex-start items-center mt-4">
         <div
-          className={`side-animation sm:side-animation-desktop sm:hover:cursor-pointer bg-gradient-to-br from-blue-600 via-blue-250 to-indigo-300 ${fireAnimation ? "animate-job" : ""}`}
+          className={`side-animation sm:side-animation-desktop sm:hover:cursor-pointer bg-gradient-to-br from-violet-300 via-purple-200 to-violet-300 ${fireAnimation ? "animate-job" : ""}`}
           onClick={handleOpen}
         >
-          <div className="flex items-center hidden sm:flex sm:h-50">
+          <div className="hidden h-full w-1/2 items-center justify-center sm:flex">
             <img
-              className={`pl-[2%] pb-[4%]`}
-              style={{ height: `${logoHeight}` }}
+              className="h-32 w-full max-w-48 object-contain"
               src={logoSource}
+              alt={`${companyName} logo`}
             />
           </div>
         </div>
