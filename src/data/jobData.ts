@@ -1,6 +1,7 @@
 import redditLogo from "../assets/RedditLogo.png";
 import quintaraLogo from "../assets/quintaralogo.png";
 import domDabLogo from "../assets/domdab.png"
+import g2Logo from "../assets/G2_Crowd_logo.svg"
 
 export interface Project {
   value: string;
@@ -11,7 +12,6 @@ export interface Project {
 
 export interface Job {
   logoSource?: string;
-  logoHeight?: string;
   company: string;
   description: string;
   datesWorked: string;
@@ -20,11 +20,28 @@ export interface Job {
 
 export const engJobHistory: Job[] = [
   {
-    company: "Freelance",
-    description: "Worked as a freelancer and focused on engineering projects to launch as businesses",
-    datesWorked: "January 2025 - present",
+    company: "G2",
+    description: "Investigated complex, multi-account fraud networks and coordinated targeted enforcement actions to safeguard marketplace review integrity.",
+    datesWorked: "August 2026 - present",
+    logoSource: g2Logo,
+    projects: [
+      {
+        value: "nlp",
+        name: "Natural Language Processor",
+        description: "Automated tools were removing content with vague descriptions, causing stakeholder confusion. I built a system that would evaluate scoring models and return rejection reasons in natural language",
+      },
+      {
+        value: "admin",
+        name: "Internal Tool Updates",
+        description: "Tooling for human moderator processing was outdated, data-heavy and cluttered. I updated the interface, submitting code changes personally and saving hundreds of hours annually in employee time as well as increasing precision of moderator decisions by 8%",
+      },
+    ]
+  },
+  {
+    company: "Independent Consultant",
+    description: "Worked as an independent consultant while also building engineering projects to launch as businesses",
+    datesWorked: "January 2025 - August 2026",
     logoSource: domDabLogo,
-    logoHeight: "70%",
     projects: [
       {
         value: "oeis-web",
@@ -49,7 +66,6 @@ export const engJobHistory: Job[] = [
       "Front end Software Engineer for a small DNA sequencing company",
     datesWorked: "April 2023 - January 2025",
     logoSource: quintaraLogo,
-    logoHeight: "20%",
     projects: [
       {
         value: "plasmid-order",
@@ -70,7 +86,6 @@ export const engJobHistory: Job[] = [
       "Full stack software engineer developing a tool for the Anti-Evil team to fight abuse at scale",
     datesWorked: "April 2020 - Feb 2023",
     logoSource: redditLogo,
-    logoHeight: "70%",
     projects: [
       {
         value: "report-abuse-queue",

@@ -11,7 +11,7 @@ import { type LanguageDetail } from "@/data/langData";
 
 const GridCard = ({ name, level, image, emoji, moreInfo }: LanguageDetail) => {
   return (
-    <Card className="relative mx-auto w-full max-w-sm pt-0 gap-0 sm:gap-6">
+    <Card className="relative mx-auto w-full max-w-sm pt-0 gap-0 sm:gap-6 p-5">
       <div className="absolute inset-0 z-30 aspect-video" />
       <img
         src={image}

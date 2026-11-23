@@ -1,13 +1,13 @@
 import DomProfilePicNoBG from "../assets/DomProfilePicNoBG.png";
-import resume from "@/assets/Dominic V. Dabrowiecki.pdf";
+import resume from "@/assets/DominicDabrowiecki2026Resume.pdf";
 import { Github, Linkedin, Briefcase } from "lucide-react";
 
 const LandingPage = () => {
   return (
     <div>
       <div className="max-w-7xl mx-auto">
-        <div className="flex flex-col lg:flex-row items-center gap-60 md:gap-70 relative">
-          <div className="flex-1 text-white z-10">
+        <div className="grid grid-cols-1 items-center gap-8 lg:grid-cols-[minmax(0,1fr)_18rem_minmax(0,1fr)]">
+          <div className="text-white z-10">
             <h1 className="md:text-7xl text-5xl font-bold mb-6">
               Dominic
               <br />
@@ -43,10 +43,19 @@ const LandingPage = () => {
             </div>
           </div>
 
-          <div className="flex-1 flex flex-col">
+          <div className="pointer-events-none mx-auto w-full max-w-xs overflow-hidden rounded-3xl">
+            <img
+              src={DomProfilePicNoBG}
+              alt="Profile"
+              className="w-full object-cover rounded-[48px] transition"
+            />
+          </div>
+
+          <div className="flex flex-col">
             <h2 className="text-white md:text-2xl font-semibold mb-4 z-10">
               Hi, I'm Dom! <br />
-              Full-Stack Software Developer,
+              Full-Stack Software Developer <br />
+              and Trust & Safety Expert,
               <br />
               based in the San Francisco Bay Area.
             </h2>
@@ -64,13 +73,6 @@ const LandingPage = () => {
               </a> */}
           </div>
 
-          <div className="absolute md:top-auto left-1/2 transform -translate-x-1/2 w-full md:w-1/4 pointer-events-none pt-40 md:pt-24">
-            <img
-              src={DomProfilePicNoBG}
-              alt="Profile"
-              className="w-full object-cover transition"
-            />
-          </div>
         </div>
       </div>
     </div>

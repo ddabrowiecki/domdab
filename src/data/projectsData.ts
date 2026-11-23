@@ -10,7 +10,6 @@ export const engProjects: Job[] = [
       "A tool to track Reddit stock price and calculate tax burden for stock options based on financial data",
     datesWorked: "2024",
     logoSource: redditTrackerLogo,
-    logoHeight: "80%",
     projects: [
       {
         value: "langs",
@@ -36,7 +35,6 @@ export const engProjects: Job[] = [
       and sends notifications to the user on a set schedule reminding them to reach out to the contact -- IN PROGRESS`,
     datesWorked: "2025",
     logoSource: writeMomLogo,
-    logoHeight: "70%",
     projects: [
       {
         value: "langs",
@@ -74,7 +72,6 @@ export const engProjects: Job[] = [
     special focus given to "tech disadvantaged" individuals (elderly, less financial means) -- IN PROGRESS`,
     datesWorked: "2026",
     logoSource: taruLogo,
-    logoHeight: "75%",
     projects: [
       {
         value: "langs",
